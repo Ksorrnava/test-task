@@ -1,0 +1,16 @@
+{
+  "name": "TestTask",
+  "version": "0.0.1",
+  "description": "Tamaranga",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7"
+  }
+}

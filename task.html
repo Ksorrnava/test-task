@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Тестовое задание</title>
+  <style>
+    body {
+      padding: 50px 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .heading {
+      margin-bottom: 30px;
+    }
+
+    .section + .section {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="section">
+    <h2 class="heading">Сверстать простой макет по этому прототипу:</h2>
+    <p><img src="img/prototype.png" alt=""></p>
+  </div>
+  <div class="section">
+    <h2>Инструкции:</h2>
+    <ol>
+      <li>Выполнить команду <code>npm install</code> для установки Gulp и плагинов</li>
+      <li>
+        Установить плагин для компиляции <code>sass/scss</code> в <code>css</code> (scss/main.scss -> css/main.css) и применить его в gulpfile.js с привязкой к основной задаче <code>'serve'</code> чтобы при сохранении запускалась компиляция, а при изменении *.css файлов запускалcя reload.
+        <div class="text-secondary">* используйте sourcemaps</div>
+      </li>
+      <li>Выполнить <code>npm start</code> для запуска сервера (BrowserSync)</li>
+      <li>
+        Сверстайте страницу согласно прототипу (responsive). Цвета, шрифты, размерность и т.п. значения не имеют, все остается на ваше усмотрение. Однако храните это все в переменных. Постарайтесь сделать все чисто, просто и со вкусом.
+        <div class="text-secondary">
+          Все файлы для верстки находятся в папке <code>views</code>.<br>
+          <code>views/layout.php</code> - лейаут<br>
+          <code>views/header.php</code> - шапка<br>
+          <code>views/footer.php</code> - футер<br>
+          <code>views/pages/index.php</code> - контент главной страницы<br>
+        </div>
+        <div class="text-info">Футер должен прилипать к низу страницы и не мешать контенту независимо от его высоты.</div>
+        <div class="text-info">Список постов сверстайте без помощи Bootstrap. На десктопе должно быть 3 поста в ряд, на планшете - 2, на смартфоне - 1. Верстка не должна разваливаться независимо от высоты каждого объекта в списке. Можете использовать Flexbox.</div>
+      </li>
+      <li>
+        Для 3 кнопок "Red/Green/Blue modal" создайте 3 отдельных модальных окна с помощью bootstrap. Модальные окна храните в отдельных файлах в папке <code>views/modals</code>
+      </li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>Дополнительное задание:</h2>
+    <ol>
+      <li>Меню в шапке и в футере выводите в цикле (php). Данные храните в отдельном файле в массиве.</li>
+      <li>Выделенный пункт меню (Блог) отображайте с помощью переменной в файле ./index.php</li>
+      <li>Список постов отображайте с помощью цикла (php). Данные храните в отдельном файле в массиве.</li>
+      <li>
+        <p>С помощью JavaScript, для каждого из модальных окон сделайте соответствующий цвет для <code>'.modal-backdrop'</code>:</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <p><img src="img/modal-red.png" alt=""></p>
+          </div>
+          <div class="col-sm-4">
+            <p><img src="img/modal-green.png" alt=""></p>
+          </div>
+          <div class="col-sm-4">
+            <p><img src="img/modal-blue.png" alt=""></p>
+          </div>
+        </div>
+        <div class="text-secondary">
+          Подсказка: Вы можете использовать <code>'data'</code>-атрибуты, выставляя соответствующие классы каждому модальному окну.
+        </div>
+      </li>
+    </ol>
+  </div>
+
+
+</div>
+
+</body>
+</html>
