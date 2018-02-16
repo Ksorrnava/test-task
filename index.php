@@ -2,7 +2,7 @@
 require_once('_func.php');
 
 $page = 'index';
-$pageTitle = 'Title';
+$pageTitle = 'Test task by @Ksorrnava';
 
 $content = render('views/pages/'.$page.'');
 
